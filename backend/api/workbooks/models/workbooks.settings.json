@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workbooks",
+  "info": {
+    "name": "Workbooks",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pages": {
+      "type": "json",
+      "required": false
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "disease": {
+      "via": "workbook",
+      "model": "diseases"
+    },
+    "pagetime": {
+      "type": "json"
+    },
+    "pageprogress": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "pagetime",
+  "type": "object",
+  "properties": {
+    "userid": {
+      "description": "Takes a user's ID",
+      "type": "string"
+    },
+    "pageid": {
+      "description": "Takes a page's ID for easy pullin of data",
+      "type": "string"
+    },
+    "time": {
+      "description": "Time spent on page",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "userid",
+    "pageid",
+    "time"
+  ]
+}

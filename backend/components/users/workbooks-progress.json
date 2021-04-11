@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_users_workbooks_progresses",
+  "info": {
+    "name": "workbooks_progress",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "completed_pages": {
+      "type": "integer"
+    },
+    "total_pages": {
+      "type": "integer"
+    },
+    "workbook_id": {
+      "type": "string"
+    }
+  }
+}

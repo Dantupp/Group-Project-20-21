@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "required": true
+    },
+    "provider": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "private": true
+    },
+    "confirmationToken": {
+      "type": "string",
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false
+    },
+    "role": {
+      "plugin": "users-permissions",
+      "model": "role",
+      "via": "users"
+    },
+    "additionalPermissions": {
+      "type": "json"
+    },
+    "diseases": {
+      "via": "users",
+      "collection": "diseases",
+      "dominant": true
+    },
+    "gender": {
+      "model": "genders"
+    },
+    "videos": {
+      "type": "json"
+    },
+    "hyperlinks": {
+      "type": "json"
+    },
+    "pagetime": {
+      "type": "json"
+    },
+    "userinput": {
+      "type": "json"
+    },
+    "notifications_frequency": {
+      "type": "component",
+      "repeatable": false,
+      "component": "users.notifications"
+    },
+    "workbooks_progress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "users.workbooks-progress"
+    }
+  }
+}

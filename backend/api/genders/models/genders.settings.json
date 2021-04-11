@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "genders",
+  "info": {
+    "name": "genders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "pages": {
+      "collection": "pages",
+      "via": "genders"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+FROM strapi/base
+
+WORKDIR /strapi
+
+COPY ./package.json ./
+
+RUN yarn install
+
+COPY . .
+
+ENV NODE_ENV production
+ENV HOST 0.0.0.0
+ENV PORT 1337
+
+RUN yarn build
+
+EXPOSE 1337
+
+CMD ["yarn", "start"]

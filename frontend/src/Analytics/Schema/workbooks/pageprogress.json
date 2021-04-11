@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "pageprogress",
+    "type": "object",
+    "properties": {
+      "userid": {
+        "description": "Takes a user's ID",
+        "type": "string"
+      },
+      "pageid": {
+        "description": "Takes the page's ID",
+        "type": "string"
+      }
+    },
+    "required": [
+      "userid",
+      "pageid"
+    ]
+  }

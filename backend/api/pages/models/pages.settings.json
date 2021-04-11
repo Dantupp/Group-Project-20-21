@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "content"
+      ],
+      "required": true
+    },
+    "genders": {
+      "via": "pages",
+      "collection": "genders",
+      "dominant": true
+    },
+    "diseases": {
+      "via": "pages",
+      "collection": "diseases",
+      "dominant": true
+    },
+    "content": {
+      "type": "json",
+      "required": false
+    }
+  }
+}

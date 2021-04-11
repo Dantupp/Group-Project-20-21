@@ -1,0 +1,25 @@
+.workbook-page {
+    display: flex;
+    margin-bottom: 1em;
+
+    .page-content {
+        border: #005eb8 2px solid;
+        padding: 1em;
+        flex-grow: 1;
+    }
+
+    .page-actions {
+        margin-left: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #005eb8;
+
+        svg {
+            width: 2em;
+            height: 2em;
+            margin: 2px 0;
+            cursor: pointer;
+        }
+    }
+}

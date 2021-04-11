@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/workbooks",
+      "handler": "workbooks.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workbooks/count",
+      "handler": "workbooks.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/workbooks/:id",
+      "handler": "workbooks.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/workbooks",
+      "handler": "workbooks.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/workbooks/:id",
+      "handler": "workbooks.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/workbooks/:id",
+      "handler": "workbooks.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

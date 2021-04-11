@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  frontend:
+    image: local/frontend:latest
+    ports:
+      - "80:80"
+  backend:
+    image: local/backend:latest
+    ports:
+      - "1337:1337"
+    environment:
+    - DB_USERNAME=
+    - DB_PASSWORD=
+    - SMTP_EMAIL=
+    - SMTP_PASSWORD=

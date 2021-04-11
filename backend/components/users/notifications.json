@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_users_notifications",
+  "info": {
+    "name": "notifications",
+    "icon": "mobile-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "frequency": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "each_day",
+        "each_week"
+      ]
+    },
+    "time_of_day": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "morning",
+        "evening",
+        "night"
+      ]
+    }
+  }
+}

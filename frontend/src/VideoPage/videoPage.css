@@ -1,0 +1,15 @@
+.marker{
+    padding: 15px 20px;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.marker--not-complete {
+    background-color: #D0D5D6;
+    color: #84919C;
+}
+
+.marker--is-complete {
+    background-color: #005EB8;
+    color: white;
+}
